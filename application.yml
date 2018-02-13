@@ -16,6 +16,11 @@ spring:
     cluster-name: delphi
     cluster-nodes: localhost:9300
 
+#for now..
+management:
+  security:
+    enabled: false
+    
 logging: 
   level: 
     root: WARN
