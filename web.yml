@@ -19,4 +19,6 @@ logging:
   file: C:\\logs\\oogway\\web.log
   
 file.name.answers.to.win.time: answers-to-win-time.txt
+
+test.message: old man and the...
   
