@@ -18,7 +18,4 @@ logging:
   level.guru.bonacci.oogway.web: INFO
   file: C:\\logs\\oogway\\web.log
   
-file.name.answers.to.win.time: answers-to-win-time.txt
-  
-message: old woman and the sea
-  
+file.name.answers.to.win.time: answers-to-win-time.txt  
