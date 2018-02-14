@@ -19,3 +19,5 @@ logging:
   file: C:\\logs\\oogway\\web.log
   
 file.name.answers.to.win.time: answers-to-win-time.txt  
+
+demo.message: You could start tomorrow, and spend another forty years learning about the sea without running out of new things to know.
