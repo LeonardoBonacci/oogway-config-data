@@ -15,6 +15,11 @@ spring:
    elasticsearch:
     cluster-name: delphi
     cluster-nodes: localhost:9300
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      skipPattern: (^cleanup.*)
 
 #for now..
 management:
@@ -25,3 +30,5 @@ logging:
   level: 
     root: WARN
     org.springframework: INFO
+    
+    
