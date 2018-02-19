@@ -16,6 +16,5 @@ build:
 
 logging: 
   level.guru.bonacci.spectre.weather: INFO
-  file: C:\\logs\\spectre\\weather.log
   
 openweathermap.apikey: 9c721267a69a906658d20d673c73b1a9

@@ -3,4 +3,3 @@ server:
 
 logging:
   level.guru.bonacci.oogway.orchestration: INFO
-  file: C:\\logs\\oogway\\orchestration.log

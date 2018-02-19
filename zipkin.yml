@@ -6,4 +6,3 @@ build:
 
 logging: 
   level.guru.bonacci.oogway.zipkin: DEBUG
-  file: C:\\logs\\oogway\\zipkin.log

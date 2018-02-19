@@ -13,4 +13,3 @@ build:
 
 logging: 
   level.guru.bonacci.oogway.oracle: INFO
-  file: C:\\logs\\oogway\\oracle.log

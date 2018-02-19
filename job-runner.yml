@@ -6,7 +6,6 @@ build:
 
 logging: 
   level.guru.bonacci.oogway.jobs: INFO
-  file: C:\\logs\\oogway\\jobs.log
   
 # LAO ZU once said: FROM CARING COMES COURAGE
 # if you care the slightest bit about your twitter account then don't show your keys in a property file

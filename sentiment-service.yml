@@ -16,4 +16,3 @@ build:
 
 logging: 
   level.guru.bonacci.spectre.sentiment: INFO
-  file: C:\\logs\\spectre\\sentiment.log

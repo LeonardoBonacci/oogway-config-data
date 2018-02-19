@@ -16,4 +16,3 @@ build:
 
 logging: 
   level.guru.bonacci.spectre.money: INFO
-  file: C:\\logs\\spectre\\money.log

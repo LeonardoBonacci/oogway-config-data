@@ -13,7 +13,6 @@ build:
 
 logging:
   level.guru.bonacci.oogway.sannya: INFO
-  file: C:\\logs\\oogway\\sannya.log
 
 # URLs of web pages we visit
 web:

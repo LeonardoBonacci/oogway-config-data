@@ -16,6 +16,5 @@ build:
 
 logging: 
   level.guru.bonacci.spectre.localtimer: INFO
-  file: C:\\logs\\spectre\\localtimer.log
   
 geo.name.username: leonardobonacci
