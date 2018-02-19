@@ -26,6 +26,10 @@ management:
   security:
     enabled: false
     
+logstash:
+  host: 127.0.0.1
+  port: 5000
+
 logging: 
   level: 
     root: WARN
