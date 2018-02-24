@@ -13,8 +13,5 @@ security:
     resource:
       userInfoUri: http://localhost:5000/auth/user
 
-build: 
-  version: "@project.version@"
-
 logging: 
   level.guru.bonacci.oogway.oracle: INFO
