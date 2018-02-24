@@ -11,9 +11,6 @@ spring:
         enrichment:
           group: localtimer
 
-build: 
-  version: "@project.version@"
-
 logging: 
   level.guru.bonacci.spectre.localtimer: INFO
   

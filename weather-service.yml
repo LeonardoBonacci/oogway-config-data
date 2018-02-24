@@ -11,9 +11,6 @@ spring:
         enrichment:
           group: weather
 
-build: 
-  version: "@project.version@"
-
 logging: 
   level.guru.bonacci.spectre.weather: INFO
   
