@@ -11,8 +11,5 @@ spring:
         enrichment:
           group: money
 
-build: 
-  version: "@project.version@"
-
 logging: 
   level.guru.bonacci.spectre.money: INFO

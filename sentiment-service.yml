@@ -11,8 +11,5 @@ spring:
         enrichment:
           group: sentiment
 
-build: 
-  version: "@project.version@"
-
 logging: 
   level.guru.bonacci.spectre.sentiment: INFO

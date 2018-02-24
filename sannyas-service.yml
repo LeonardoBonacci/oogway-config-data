@@ -8,9 +8,6 @@ spring:
         oracle:
           group: sannya
 
-build:
-  version: "@project.version@"
-
 logging:
   level.guru.bonacci.oogway.sannya: INFO
 

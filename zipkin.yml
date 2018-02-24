@@ -1,8 +1,5 @@
 server: 
   port: 9411
 
-build: 
-  version: "@project.version@"
-
 logging: 
   level.guru.bonacci.oogway.zipkin: DEBUG
