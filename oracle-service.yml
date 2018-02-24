@@ -8,6 +8,11 @@ spring:
         sannya: 
           group: oracle
 
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:5000/auth/user
+
 build: 
   version: "@project.version@"
 

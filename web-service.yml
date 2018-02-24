@@ -11,6 +11,19 @@ spring:
               exchangeType: direct
               routingKeyExpression: '''eavesdrop'''
 
+# no need to secure the web ui 
+# avoid message: 'requesting your username and password. The site says: "Spring"'
+security.ignored: /**
+
+security:
+  oauth2:
+    client:
+      clientId: web-service
+      clientSecret: web-service-secret
+      accessTokenUri: http://localhost:5000/auth/oauth/token
+      grant-type: client_credentials
+      scope: resource-server-read
+
 build: 
   version: "@project.version@"
 
