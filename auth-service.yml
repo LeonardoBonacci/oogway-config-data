@@ -5,4 +5,4 @@ server:
 logging: 
   level:
     org.springframework.security: DEBUG
-    guru.bonacci.spectre.auth: INFO
+    guru.bonacci.oogway.auth: INFO
