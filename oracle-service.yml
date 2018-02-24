@@ -8,8 +8,10 @@ spring:
         sannya: 
           group: oracle
 
-build: 
-  version: "@project.version@"
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:5000/auth/user
 
 logging: 
   level.guru.bonacci.oogway.oracle: INFO

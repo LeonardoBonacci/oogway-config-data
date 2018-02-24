@@ -1,8 +1,14 @@
 server: 
   port: 8765
 
-build: 
-  version: "@project.version@"
+security:
+  oauth2:
+    client:
+      clientId: job-service
+      clientSecret: job-service-secret
+      accessTokenUri: http://localhost:5000/auth/oauth/token
+      grant-type: client_credentials
+      scope: resource-server-read
 
 logging: 
   level.guru.bonacci.oogway.jobs: INFO

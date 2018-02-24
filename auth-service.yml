@@ -1,0 +1,8 @@
+server:
+  contextPath: /auth
+  port: 5000
+
+logging: 
+  level:
+    org.springframework.security: DEBUG
+    guru.bonacci.oogway.auth: INFO
