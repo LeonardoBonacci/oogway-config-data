@@ -27,6 +27,7 @@ management:
     enabled: false
     
 logging: 
+  config: classpath:logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
