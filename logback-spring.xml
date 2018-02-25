@@ -15,8 +15,8 @@
 	</appender>
 
 	<appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-		<remoteHost>localhost</remoteHost>
-        <port>4560</port>	
+		<remoteHost>${LOGSTASH_HOST}</remoteHost>
+        <port>${LOGSTASH_PORT}</port>	
 
 		<encoder
 			class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
@@ -30,7 +30,7 @@
 				<pattern>
 					<pattern>
 						{
-						"serviceName": "web-service"
+						"serviceName": "${APPLICATION_NAME}"
 						}
 					</pattern>
 				</pattern>
