@@ -29,7 +29,7 @@ logging:
 
 logstash:
   host: 127.0.0.1
-  port: 4561
+  port: 4560
     
 build: 
   version: "@project.version@"  
