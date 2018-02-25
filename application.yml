@@ -21,16 +21,16 @@ spring:
     web:
       skipPattern: (^cleanup.*)
 
-#for now..
-management:
-  security:
-    enabled: false
-    
 logging: 
+  config:  http://localhost:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
 
+logstash:
+  host: 127.0.0.1
+  port: 4560
+    
 build: 
   version: "@project.version@"  
     
