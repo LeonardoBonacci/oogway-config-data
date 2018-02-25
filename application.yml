@@ -27,7 +27,7 @@ management:
     enabled: false
     
 logging: 
-  config: classpath:logback-spring.xml
+  config:  http://localhost:8888/${spring.application.name}/${spring.profiles.active}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
