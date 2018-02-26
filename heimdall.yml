@@ -1,6 +1,19 @@
 server:
   port: 9090
 
+# no need to secure the gate
+# avoid message: 'requesting your username and password. The site says: "Spring"'
+security.ignored: /**
+
+security:
+  oauth2:
+    client:
+      clientId: heimdall
+      clientSecret: heimdall-secret
+      accessTokenUri: http://localhost:5000/auth/oauth/token
+      grant-type: client_credentials
+      scope: resource-server-read
+
 hystrix:
   command:
     default:
@@ -40,4 +53,7 @@ zuul:
         serviceId: sannyas-service
         stripPrefix: false
         sensitiveHeaders:
+
+logging: 
+  level.guru.bonacci.oogway.heimdall: INFO
         
