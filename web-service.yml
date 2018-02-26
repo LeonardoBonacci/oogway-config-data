@@ -1,5 +1,6 @@
 server: 
   port: 3333
+  context-path: /webby
 
 spring:
   cloud:
