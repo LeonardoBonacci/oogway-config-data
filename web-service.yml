@@ -12,6 +12,10 @@ spring:
               exchangeType: direct
               routingKeyExpression: '''eavesdrop'''
 
+# no need to secure the web ui 
+# avoid message: 'requesting your username and password. The site says: "Spring"'
+security.ignored: /**
+
 security:
   oauth2:
     client:
@@ -20,8 +24,6 @@ security:
       accessTokenUri: http://localhost:5000/auth/oauth/token
       grant-type: client_credentials
       scope: resource-server-read
-    resource:
-      userInfoUri: http://localhost:5000/auth/user
 
 logging: 
   level.guru.bonacci.oogway.web: INFO
