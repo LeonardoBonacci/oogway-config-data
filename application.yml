@@ -13,7 +13,7 @@ spring:
         binder: rabbit
   data:
    elasticsearch:
-    cluster-name: delphi
+    cluster-name: elasticsearch
     cluster-nodes: localhost:9300
   sleuth:
     sampler:
