@@ -1,10 +1,10 @@
-eureka: 
-  instance: 
-    leaseRenewalIntervalInSeconds: 5
+eureka:
+  instance:
+    prefer-ip-address: true
   client: 
     serviceUrl: 
       defaultZone: http://orchestration-service:1111/eureka/
-      
+
 spring:
   cloud:
     stream:
