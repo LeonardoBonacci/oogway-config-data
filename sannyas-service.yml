@@ -7,7 +7,7 @@ spring:
     stream:
       bindings:
         oracle:
-          group: sannya
+          group: sannyas
 
 logging:
   level.guru.bonacci.oogway.sannya: INFO
