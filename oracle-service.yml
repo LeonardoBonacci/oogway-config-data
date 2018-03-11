@@ -6,7 +6,7 @@ spring:
   cloud:
     stream:
       bindings:
-        sannya: 
+        sannyas: 
           group: oracle
 
 security:

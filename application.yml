@@ -14,7 +14,7 @@ spring:
   data:
    elasticsearch:
     cluster-name: elasticsearch
-    cluster-nodes: es:9300
+    cluster-nodes: http://es:9300
   sleuth:
     sampler:
       percentage: 1.0
