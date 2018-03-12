@@ -11,6 +11,8 @@ spring:
       default:
         contentType: application/json
         binder: rabbit
+  rabbitmq:
+    host: rabbit
   data:
    elasticsearch:
     cluster-name: elasticsearch
