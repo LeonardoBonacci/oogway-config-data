@@ -23,7 +23,7 @@ spring:
     web:
       skipPattern: (^cleanup.*)
   zipkin:
-    baseUrl: zipkin-service
+    baseUrl: http://zipkin-service:8080
 
 logging: 
   config: http://config:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
