@@ -26,7 +26,7 @@ security:
       scope: resource-server-read
 
 logging: 
-  level.guru.bonacci.oogway.web: INFO
+  level.guru.bonacci.oogway.web: DEBUG
   
 file.name.answers.to.win.time: answers-to-win-time.txt
 
