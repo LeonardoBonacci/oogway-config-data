@@ -22,6 +22,8 @@ spring:
       percentage: 1.0
     web:
       skipPattern: (^cleanup.*)
+  zipkin:
+    baseUrl: zipkin
 
 logging: 
   config: http://config:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
