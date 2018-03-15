@@ -21,12 +21,12 @@ security:
     client:
       clientId: web-service
       clientSecret: web-service-secret
-      accessTokenUri: http://localhost:5000/auth/oauth/token
+      accessTokenUri: http://auth-service:5000/auth/oauth/token
       grant-type: client_credentials
       scope: resource-server-read
 
 logging: 
-  level.guru.bonacci.oogway.web: INFO
+  level.guru.bonacci.oogway.web: DEBUG
   
 file.name.answers.to.win.time: answers-to-win-time.txt
 

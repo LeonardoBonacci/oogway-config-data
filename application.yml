@@ -1,34 +1,39 @@
-eureka: 
-  instance: 
-    leaseRenewalIntervalInSeconds: 5
+eureka:
+  instance:
+    prefer-ip-address: true
   client: 
     serviceUrl: 
-      defaultZone: http://localhost:1111/eureka/
-      
+      defaultZone: http://orchestration-service:1111/eureka/
+
 spring:
   cloud:
     stream:
       default:
         contentType: application/json
         binder: rabbit
+  rabbitmq:
+    host: rabbit
   data:
    elasticsearch:
-    cluster-name: delphi
-    cluster-nodes: localhost:9300
+    cluster-name: elasticsearch
+    cluster-nodes: es:9300 
   sleuth:
     sampler:
       percentage: 1.0
     web:
       skipPattern: (^cleanup.*)
-
+  zipkin:
+    baseUrl: http://zipkin:9411
+    enabled: true
+      
 logging: 
-  config:  http://localhost:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
+  config: http://config:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
 
 logstash:
-  host: 127.0.0.1
+  host: logstash
   port: 4560
     
 build: 

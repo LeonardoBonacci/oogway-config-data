@@ -6,13 +6,13 @@ spring:
   cloud:
     stream:
       bindings:
-        sannya: 
+        sannyas: 
           group: oracle
 
 security:
   oauth2:
     resource:
-      userInfoUri: http://localhost:5000/auth/user
+      userInfoUri: http://auth-service:5000/auth/user
 
 logging: 
   level.guru.bonacci.oogway.oracle: INFO
