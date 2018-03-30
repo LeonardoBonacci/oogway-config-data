@@ -42,5 +42,5 @@ zuul:
         sensitiveHeaders:
 
 logging: 
-  level.guru.bonacci.oogway.heimdall: INFO
+  level.guru.bonacci.oogway.gateway: INFO
         
