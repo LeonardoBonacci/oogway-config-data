@@ -17,7 +17,6 @@ web:
   url:
     gr: https://www.goodreads.com/quotes/tag/
     bq: https://www.brainyquote.com/quotes/keywords/#tag#_#page#.html?vm=l
-    qd: https://www.quotesdaddy.com/find/quote/#tag#/1
 
 # Filter configs
 filter:
