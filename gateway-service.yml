@@ -25,7 +25,7 @@ zuul:
   
     web-service:
         path: /webby/**
-        serviceId: web-service
+        serviceId: entrance-service
         stripPrefix: false
         sensitiveHeaders:
 
