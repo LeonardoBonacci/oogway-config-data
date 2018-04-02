@@ -1,6 +1,6 @@
 server: 
   port: 3333
-  context-path: /webby
+  context-path: /entrance
 
 spring:
   cloud:
