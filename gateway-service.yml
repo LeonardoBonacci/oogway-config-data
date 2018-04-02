@@ -23,8 +23,8 @@ zuul:
         stripPrefix: false
         sensitiveHeaders:
   
-    web-service:
-        path: /webby/**
+    entrance-service:
+        path: /entrance/**
         serviceId: entrance-service
         stripPrefix: false
         sensitiveHeaders:
