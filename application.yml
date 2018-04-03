@@ -27,7 +27,7 @@ spring:
     enabled: true
       
 logging: 
-  config: http://config:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
+  config: http://config-service:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
