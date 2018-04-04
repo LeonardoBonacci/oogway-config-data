@@ -5,6 +5,7 @@ eureka:
     serviceUrl: 
       defaultZone: http://orchestration-service:1111/eureka/
 
+      
 spring:
   cloud:
     stream:
@@ -26,20 +27,25 @@ spring:
     baseUrl: http://zipkin:9411
     enabled: true
 
+    
 application:
   name:
+    auth: auth-service
     oracle: oracle-service
     entrance: entrance-service
-       
+    
+    
 logging: 
   config: http://config-service:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
 
+    
 logstash:
   host: logstash
   port: 4560
+    
     
 build: 
   version: "@project.version@"  
