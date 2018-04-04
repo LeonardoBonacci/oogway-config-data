@@ -27,7 +27,13 @@ spring:
     baseUrl: http://zipkin:9411
     enabled: true
 
-    
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://auth-service:5000/auth/users/current
+
+      
 application:
   name:
     auth: auth-service
