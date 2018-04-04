@@ -33,7 +33,6 @@ security:
     resource:
       user-info-uri: http://auth-service:5000/auth/users/current
 
-      
 application:
   name:
     auth: auth-service
