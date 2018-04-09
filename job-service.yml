@@ -7,7 +7,6 @@ security:
       clientId: job-service
       clientSecret: job-service-secret
       accessTokenUri: http://auth-service:5000/auth/oauth/token
-      grant-type: client_credentials
       scope: resource-server-read
 
 feign:

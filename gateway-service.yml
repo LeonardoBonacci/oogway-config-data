@@ -29,6 +29,12 @@ zuul:
         stripPrefix: false
         sensitiveHeaders:
 
+    entrance-service:
+        path: /lumber/**
+        serviceId: lumberjack
+        stripPrefix: false
+        sensitiveHeaders:
+
     oracle-service:
         path: /oracle/**
         serviceId: oracle-service

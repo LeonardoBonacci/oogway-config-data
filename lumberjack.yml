@@ -1,0 +1,13 @@
+server:
+  port: 11235
+  context-path: /lumber
+
+spring:
+  data:
+    mongodb:
+      host: mongo
+      database: oogway
+      port: 27017
+
+logging: 
+  level.guru.bonacci.oogway.lumberjack: INFO  
