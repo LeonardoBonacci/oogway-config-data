@@ -29,7 +29,7 @@ zuul:
         stripPrefix: false
         sensitiveHeaders:
 
-    entrance-service:
+    lumberjack:
         path: /lumber/**
         serviceId: lumberjack
         stripPrefix: false
