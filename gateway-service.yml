@@ -10,8 +10,8 @@ hystrix:
             timeoutInMilliseconds: 20000
 
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
 
 zuul:
   ignoredServices: '*'
@@ -48,5 +48,5 @@ zuul:
         sensitiveHeaders:
 
 logging: 
-  level.guru.bonacci.oogway.gateway: DEBUG
+  level.guru.bonacci.oogway.gateway: INFO
         
