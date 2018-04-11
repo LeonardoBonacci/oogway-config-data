@@ -1,6 +1,7 @@
 server:
-  contextPath: /auth
   port: 5000
+  servlet:
+    context-path: /auth
 
 logging: 
   level:

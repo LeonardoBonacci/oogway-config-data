@@ -1,6 +1,7 @@
 server: 
   port: 3333
-  context-path: /entrance
+  servlet:
+    context-path: /entrance
 
 spring:
   cloud:
