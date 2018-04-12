@@ -13,10 +13,6 @@ spring:
               exchangeType: direct
               routingKeyExpression: '''eavesdrop'''
 
-# no need to secure the web ui 
-# avoid message: 'requesting your username and password. The site says: "Spring"'
-security.ignored: /**
-
 security:
   oauth2:
     client:
@@ -26,7 +22,7 @@ security:
       scope: resource-server-read
       
 logging: 
-  level.guru.bonacci.oogway.entrance: DEBUG
+  level.guru.bonacci.oogway.entrance: INFO
   
 file.name.answers.to.win.time: answers-to-win-time.txt
 
