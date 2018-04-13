@@ -23,9 +23,9 @@ zuul:
         stripPrefix: false
         sensitiveHeaders:
   
-    entrance-service:
-        path: /entrance/**
-        serviceId: entrance-service
+    doorway-service:
+        path: /doors/**
+        serviceId: doorway-service
         stripPrefix: false
         sensitiveHeaders:
 
