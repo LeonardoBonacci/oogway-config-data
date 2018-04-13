@@ -31,10 +31,8 @@ spring:
 security:
   oauth2:
     resource:
-      service-id: auth-service
-      userInfoUri: http://${security.oauth2.resource.service-id}/auth/users/current
+      user-info-uri: http://auth-service:5000/auth/users/current
       loadBalanced: true
-      prefer-token-info: false
       
       
 application:
