@@ -18,7 +18,7 @@ security:
     client:
       clientId: doorway-service
       clientSecret: doorway-service-secret
-      accessTokenUri: http://auth-service:5000/auth/oauth/token
+      accessTokenUri: http://auth-service/auth/oauth/token
       scope: resource-server-read
       
 logging: 
