@@ -31,14 +31,19 @@ spring:
 security:
   oauth2:
     resource:
-      user-info-uri: http://auth-service:5000/auth/users/current
-
+      service-id: auth-service
+      userInfoUri: http://${security.oauth2.resource.service-id}/auth/users/current
+      loadBalanced: true
+      prefer-token-info: false
+      
+      
 application:
   name:
     auth: auth-service
     oracle: oracle-service
     doorway: doorway-service
     lumberjack: lumberjack
+    
     
 logging: 
   config: http://config-service:8888/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
