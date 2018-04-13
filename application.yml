@@ -37,7 +37,7 @@ application:
   name:
     auth: auth-service
     oracle: oracle-service
-    entrance: entrance-service
+    doorway: doorway-service
     lumberjack: lumberjack
     
 logging: 

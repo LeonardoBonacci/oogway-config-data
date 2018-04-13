@@ -1,7 +1,7 @@
 server: 
   port: 3333
   servlet:
-    context-path: /entrance
+    context-path: /doors
 
 spring:
   cloud:
@@ -16,13 +16,13 @@ spring:
 security:
   oauth2:
     client:
-      clientId: entrance-service
-      clientSecret: entrance-service-secret
+      clientId: doorway-service
+      clientSecret: doorway-service-secret
       accessTokenUri: http://auth-service:5000/auth/oauth/token
       scope: resource-server-read
       
 logging: 
-  level.guru.bonacci.oogway.entrance: INFO
+  level.guru.bonacci.oogway.doorway: INFO
   
 file.name.answers.to.win.time: answers-to-win-time.txt
 
