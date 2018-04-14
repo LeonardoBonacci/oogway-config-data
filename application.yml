@@ -32,7 +32,6 @@ security:
   oauth2:
     resource:
       user-info-uri: http://auth-service/auth/users/current
-#      loadBalanced: true      
       
 application:
   name:
