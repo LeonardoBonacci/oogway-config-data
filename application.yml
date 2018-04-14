@@ -31,7 +31,7 @@ spring:
 security:
   oauth2:
     resource:
-      user-info-uri: http://auth-service:5000/auth/users/current
+      user-info-uri: http://auth-service/auth/users/current
       
       
 application:
