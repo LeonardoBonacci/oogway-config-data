@@ -1,5 +1,0 @@
-server:
-  port: 1111
-
-logging:
-  level.guru.bonacci.oogway.orchestration: INFO
