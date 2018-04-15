@@ -1,6 +1,7 @@
 server: 
   port: 4444
-  context-path: /oracle
+  servlet:
+    context-path: /oracle
 
 spring:
   cloud:

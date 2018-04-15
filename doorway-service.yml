@@ -1,6 +1,7 @@
 server: 
   port: 3333
-  context-path: /entrance
+  servlet:
+    context-path: /doors
 
 spring:
   cloud:
@@ -12,20 +13,16 @@ spring:
               exchangeType: direct
               routingKeyExpression: '''eavesdrop'''
 
-# no need to secure the web ui 
-# avoid message: 'requesting your username and password. The site says: "Spring"'
-security.ignored: /**
-
 security:
   oauth2:
     client:
-      clientId: entrance-service
-      clientSecret: entrance-service-secret
-      accessTokenUri: http://auth-service:5000/auth/oauth/token
+      clientId: doorway-service
+      clientSecret: doorway-service-secret
+      accessTokenUri: http://auth-service/auth/oauth/token
       scope: resource-server-read
       
 logging: 
-  level.guru.bonacci.oogway.entrance: DEBUG
+  level.guru.bonacci.oogway.doorway: INFO
   
 file.name.answers.to.win.time: answers-to-win-time.txt
 

@@ -1,6 +1,7 @@
 server:
   port: 11235
-  context-path: /lumber
+  servlet:
+    context-path: /lumber
 
 spring:
   data:
