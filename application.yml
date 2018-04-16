@@ -34,7 +34,7 @@ application:
     
     
 logging: 
-  config: http://${spring.cloud.config.discovery.serviceId}${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
+  config: http://${spring.cloud.config.discovery.serviceId}/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
