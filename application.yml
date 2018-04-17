@@ -32,9 +32,9 @@ application:
     doorway: doorway-service
     lumberjack: lumberjack
     
-    
+#TODO: loadbalanced request on logging.config. Somewhere near LoggingApplicationContextInitializer    
 logging: 
-  config: http://config-service/config/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
+  config: http://config-service:8888/config/${spring.application.name}/${spring.profiles.active:default}/${spring.cloud.config.label:master}/logback-spring.xml
   level: 
     root: WARN
     org.springframework: INFO
