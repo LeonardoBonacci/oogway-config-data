@@ -17,6 +17,12 @@ zuul:
   ignoredServices: '*'
 
   routes:
+    config-service:
+        path: /config/**
+        serviceId: config-service
+        stripPrefix: false
+        sensitiveHeaders:
+
     auth-service:
         path: /auth/**
         serviceId: auth-service
