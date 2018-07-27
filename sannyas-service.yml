@@ -11,7 +11,7 @@ spring:
           group: sannyas
 
 logging:
-  level.guru.bonacci.oogway.sannya: INFO
+  level.guru.bonacci.oogway.sannyas: INFO
 
 # URLs of web pages we visit
 web:
