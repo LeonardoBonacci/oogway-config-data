@@ -25,12 +25,17 @@ security:
     resource:
       user-info-uri: http://auth-service/auth/users/current
       
+      
 application:
   name:
     auth: auth-service
     oracle: oracle-service
     doorway: doorway-service
     lumberjack: lumberjack
+    
+# let's open all actuator endpoints
+management.endpoints.web.exposure.include: '*'
+
     
 #TODO: loadbalanced request on logging.config. Somewhere near LoggingApplicationContextInitializer    
 logging: 
